@@ -12,7 +12,7 @@ Pending:
     and 3 for Mac (tested):
     Universal build (Intel & Apple Sillicon)
     Mac OS 64 bit, only for Intel Macs
-    Mac ARM 64 bit, only for Apple Sillicon Macs
+    Mac ARM 64 bit, only for Apple Silicon Macs
 
 ### CSVParser
 Event based and recordset like CSV parser for Xojo by <https://github.com/npalardy/CSVParser>
