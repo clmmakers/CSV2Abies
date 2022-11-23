@@ -1,4 +1,4 @@
-# CSV2Abies is a small app that let you prepare csv's to AbiesWeb xml document ready to import
+# CSV2Abies is a small app that let you prepare csv to AbiesWeb xml document ready to import
     - Mac & Linux (not tested)
 
 Pending:
@@ -6,5 +6,5 @@ Pending:
 
 
 
-# CSVParser
+### CSVParser
 Event based and recordset like CSV parser for Xojo by <https://github.com/npalardy/CSVParser>
