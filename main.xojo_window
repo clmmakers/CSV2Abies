@@ -696,7 +696,7 @@ Begin Window main
             Top             =   114
             Transparent     =   False
             Underline       =   False
-            Value           =   0
+            Value           =   1
             Visible         =   True
             Width           =   889
             Begin Label Label7
@@ -957,7 +957,7 @@ Begin Window main
                Visible         =   True
                Width           =   158
             End
-            Begin TextField txtseparator
+            Begin DesktopTextField txtseparator
                AcceptTabs      =   False
                Alignment       =   0
                AutoDeactivate  =   True
@@ -966,8 +966,6 @@ Begin Window main
                Bold            =   False
                Border          =   True
                CueText         =   ""
-               DataField       =   ""
-               DataSource      =   ""
                Enabled         =   True
                Format          =   ""
                Height          =   22
@@ -1006,7 +1004,7 @@ Begin Window main
                Bold            =   False
                ButtonStyle     =   0
                Cancel          =   False
-               Caption         =   "Dividir columna"
+               Caption         =   "Dividir Columna"
                Default         =   False
                Enabled         =   True
                Height          =   20
@@ -1014,7 +1012,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   820
+               Left            =   809
                LockBottom      =   True
                LockedInPosition=   False
                LockLeft        =   False
@@ -1032,6 +1030,396 @@ Begin Window main
                Underline       =   False
                Visible         =   True
                Width           =   118
+            End
+            Begin DesktopPopupMenu popcoljoin1
+               AllowAutoDeactivate=   True
+               Bold            =   False
+               Enabled         =   True
+               FontName        =   "System"
+               FontSize        =   0.0
+               FontUnit        =   0
+               Height          =   22
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               InitialValue    =   ""
+               Italic          =   False
+               Left            =   78
+               LockBottom      =   False
+               LockedInPosition=   False
+               LockLeft        =   True
+               LockRight       =   False
+               LockTop         =   True
+               Scope           =   0
+               SelectedRowIndex=   0
+               TabIndex        =   0
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Tooltip         =   ""
+               Top             =   180
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   173
+            End
+            Begin Label Label11
+               AutoDeactivate  =   True
+               Bold            =   False
+               DataField       =   ""
+               DataSource      =   ""
+               Enabled         =   True
+               Height          =   20
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   78
+               LockBottom      =   False
+               LockedInPosition=   False
+               LockLeft        =   True
+               LockRight       =   False
+               LockTop         =   True
+               Multiline       =   False
+               Scope           =   0
+               Selectable      =   False
+               TabIndex        =   1
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Text            =   "1ª Columna a Unir"
+               TextAlign       =   0
+               TextColor       =   &c00000000
+               TextFont        =   "System"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   152
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   122
+            End
+            Begin DesktopPopupMenu popcoljoin2
+               AllowAutoDeactivate=   True
+               Bold            =   False
+               Enabled         =   True
+               FontName        =   "System"
+               FontSize        =   0.0
+               FontUnit        =   0
+               Height          =   22
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               InitialValue    =   ""
+               Italic          =   False
+               Left            =   263
+               LockBottom      =   False
+               LockedInPosition=   False
+               LockLeft        =   True
+               LockRight       =   False
+               LockTop         =   True
+               Scope           =   0
+               SelectedRowIndex=   0
+               TabIndex        =   2
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Tooltip         =   ""
+               Top             =   180
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   173
+            End
+            Begin Label Label12
+               AutoDeactivate  =   True
+               Bold            =   False
+               DataField       =   ""
+               DataSource      =   ""
+               Enabled         =   True
+               Height          =   20
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   263
+               LockBottom      =   False
+               LockedInPosition=   False
+               LockLeft        =   True
+               LockRight       =   False
+               LockTop         =   True
+               Multiline       =   False
+               Scope           =   0
+               Selectable      =   False
+               TabIndex        =   3
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Text            =   "2ª Columna"
+               TextAlign       =   0
+               TextColor       =   &c00000000
+               TextFont        =   "System"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   152
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   122
+            End
+            Begin Label Label13
+               AutoDeactivate  =   True
+               Bold            =   False
+               DataField       =   ""
+               DataSource      =   ""
+               Enabled         =   True
+               Height          =   20
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   448
+               LockBottom      =   False
+               LockedInPosition=   False
+               LockLeft        =   False
+               LockRight       =   True
+               LockTop         =   True
+               Multiline       =   False
+               Scope           =   0
+               Selectable      =   False
+               TabIndex        =   4
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Text            =   "Nombre Columna Resultante"
+               TextAlign       =   0
+               TextColor       =   &c00000000
+               TextFont        =   "System"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   152
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   191
+            End
+            Begin Label Label14
+               AutoDeactivate  =   True
+               Bold            =   False
+               DataField       =   ""
+               DataSource      =   ""
+               Enabled         =   True
+               Height          =   20
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   837
+               LockBottom      =   False
+               LockedInPosition=   False
+               LockLeft        =   False
+               LockRight       =   True
+               LockTop         =   True
+               Multiline       =   False
+               Scope           =   0
+               Selectable      =   False
+               TabIndex        =   5
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Text            =   "Separador (,;|)"
+               TextAlign       =   0
+               TextColor       =   &c00000000
+               TextFont        =   "System"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   152
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   90
+            End
+            Begin TextField txtnamenewcol3
+               AcceptTabs      =   False
+               Alignment       =   0
+               AutoDeactivate  =   True
+               AutomaticallyCheckSpelling=   False
+               BackColor       =   &cFFFFFF00
+               Bold            =   False
+               Border          =   True
+               CueText         =   ""
+               DataField       =   ""
+               DataSource      =   ""
+               Enabled         =   True
+               Format          =   ""
+               Height          =   22
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   448
+               LimitText       =   0
+               LockBottom      =   False
+               LockedInPosition=   False
+               LockLeft        =   True
+               LockRight       =   True
+               LockTop         =   True
+               Mask            =   ""
+               Password        =   False
+               ReadOnly        =   False
+               Scope           =   0
+               TabIndex        =   6
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Text            =   ""
+               TextColor       =   &c00000000
+               TextFont        =   "System"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   180
+               Transparent     =   False
+               Underline       =   False
+               UseFocusRing    =   True
+               Visible         =   True
+               Width           =   377
+            End
+            Begin TextField txtseparator1
+               AcceptTabs      =   False
+               Alignment       =   0
+               AutoDeactivate  =   True
+               AutomaticallyCheckSpelling=   False
+               BackColor       =   &cFFFFFF00
+               Bold            =   False
+               Border          =   True
+               CueText         =   ""
+               DataField       =   ""
+               DataSource      =   ""
+               Enabled         =   True
+               Format          =   ""
+               Height          =   22
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   858
+               LimitText       =   0
+               LockBottom      =   False
+               LockedInPosition=   False
+               LockLeft        =   False
+               LockRight       =   True
+               LockTop         =   True
+               Mask            =   ""
+               Password        =   False
+               ReadOnly        =   False
+               Scope           =   0
+               TabIndex        =   7
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Text            =   ""
+               TextColor       =   &c00000000
+               TextFont        =   "System"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   180
+               Transparent     =   False
+               Underline       =   False
+               UseFocusRing    =   True
+               Visible         =   True
+               Width           =   40
+            End
+            Begin PushButton btnSelAllNone2
+               AutoDeactivate  =   True
+               Bold            =   False
+               ButtonStyle     =   0
+               Cancel          =   False
+               Caption         =   "Unir columnas"
+               Default         =   False
+               Enabled         =   True
+               Height          =   20
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   809
+               LockBottom      =   True
+               LockedInPosition=   False
+               LockLeft        =   False
+               LockRight       =   True
+               LockTop         =   False
+               Scope           =   0
+               TabIndex        =   8
+               TabPanelIndex   =   2
+               TabStop         =   True
+               TextFont        =   "SmallSystem"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   216
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   118
+            End
+            Begin Label lbljoininfo
+               AutoDeactivate  =   True
+               Bold            =   False
+               DataField       =   ""
+               DataSource      =   ""
+               Enabled         =   True
+               Height          =   20
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   78
+               LockBottom      =   True
+               LockedInPosition=   False
+               LockLeft        =   True
+               LockRight       =   True
+               LockTop         =   False
+               Multiline       =   False
+               Scope           =   0
+               Selectable      =   False
+               TabIndex        =   9
+               TabPanelIndex   =   2
+               TabStop         =   True
+               Text            =   ""
+               TextAlign       =   0
+               TextColor       =   &c00000000
+               TextFont        =   "SmallSystem"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   216
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   712
+            End
+            Begin Label lbldivideinfo
+               AutoDeactivate  =   True
+               Bold            =   False
+               DataField       =   ""
+               DataSource      =   ""
+               Enabled         =   True
+               Height          =   20
+               HelpTag         =   ""
+               Index           =   -2147483648
+               InitialParent   =   "TabPanel2"
+               Italic          =   False
+               Left            =   78
+               LockBottom      =   True
+               LockedInPosition=   False
+               LockLeft        =   True
+               LockRight       =   True
+               LockTop         =   False
+               Multiline       =   False
+               Scope           =   0
+               Selectable      =   False
+               TabIndex        =   9
+               TabPanelIndex   =   1
+               TabStop         =   True
+               Text            =   ""
+               TextAlign       =   0
+               TextColor       =   &c00000000
+               TextFont        =   "SmallSystem"
+               TextSize        =   0.0
+               TextUnit        =   0
+               Top             =   216
+               Transparent     =   False
+               Underline       =   False
+               Visible         =   True
+               Width           =   730
             End
          End
       End
@@ -1234,6 +1622,7 @@ End
 		  var year as Integer=date.Year
 		  var doscrifras as String= year.ToString.Right(2)
 		  doscifrasyear = doscrifras
+		  var idtpl as integer = 1 //esto se autoactualiza en el proceso de importación dentro de Abies
 		  
 		  Var xml As New XMLDocument
 		  Var fichero As XMLNode
@@ -1242,8 +1631,8 @@ End
 		  TiposLector= fichero.AppendChild(xml.CreateElement("TiposLector"))
 		  var TipoLector as XmlNode
 		  TipoLector= TiposLector.AppendChild(xml.CreateElement("TipoLector"))
-		  TipoLector.SetAttribute("IdTipoLector","1")
-		  TipoLector.SetAttribute("TipoLector",vtp)
+		  TipoLector.SetAttribute("IdTipoLector",idtpl.ToString)
+		  TipoLector.SetAttribute("TipoLector",vtp)  //Atributo que Abies toma para actualizar el tipolector pasado con los atributos que Abies tenga
 		  TipoLector.SetAttribute("Ejemplares","4")
 		  var Politicas as XmlNode
 		  Politicas = TipoLector.AppendChild(xml.CreateElement("Politicas"))
@@ -1267,28 +1656,24 @@ End
 		    if lboxParsed.CellCheckBoxValueAt(i,0) then
 		      Lector=Lectores.AppendChild(xml.CreateElement("Lector"))
 		      Lector.SetAttribute("CodLector",gencode(i))
-		      Lector.SetAttribute("Apellidos", lboxParsed.CellTextAt(i,ncolapel ).Trim)
-		      Lector.SetAttribute("Nombre", lboxParsed.CellTextAt(i,ncolnombre).Trim)
+		      Lector.SetAttribute("Apellidos", truncaString(30,lboxParsed.CellTextAt(i,ncolapel ).Trim))
+		      Lector.SetAttribute("Nombre", truncaString(30,lboxParsed.CellTextAt(i,ncolnombre).Trim))
+		      Lector.SetAttribute("IdTipoLector", idtpl.ToString)
 		    end if
 		    
 		  next
-		  '
-		  '
-		  'Lector=Lectores.AppendChild(xml.CreateElement("Lector"))
-		  'Lector.SetAttribute("CodLector","0002B")
-		  'Lector.SetAttribute("Apellidos", "López López")
-		  'Lector.SetAttribute("Nombre", "Carla")
-		  '
-		  'Lector=Lectores.AppendChild(xml.CreateElement("Lector"))
-		  'Lector.SetAttribute("CodLector","0003C")
-		  'Lector.SetAttribute("Apellidos", "García García")
-		  'Lector.SetAttribute("Nombre", "María")
 		  
 		  Var f As FolderItem
-		  f = FolderItem.ShowSaveFileDialog("", "C2A.xml")
+		  f = FolderItem.ShowSaveFileDialog("", "ExportGenerico.xml")
 		  If f <> Nil Then
 		    xml.SaveXml(f)
 		  End If
+		  var f2 as FolderItem = f.Parent
+		  var dir as String = f2.ShellPath
+		  var sh as new shell
+		  sh.Execute("ditto -ck "+ f.NativePath + " " + f2.NativePath + "/ExportGenerico.zip")
+		  MessageBox(" Se ha creado el archivo ""ExportGenerico.zip"" en el directorio que seleccionó previamente, este archivo zip es el que puede utilizar para importar los datos en Abies")
+		  sh.Close
 		End Sub
 	#tag EndMethod
 
@@ -1322,19 +1707,26 @@ End
 		  popcoldividir.RemoveAllRows
 		  popnombrelector.RemoveAllRows
 		  popapellidoslector.RemoveAllRows
+		  popcoljoin1.RemoveAllRows
+		  popcoljoin2.RemoveAllRows
 		  popcoldividir.AddRow("Seleccionar...")
 		  popnombrelector.AddRow("Seleccionar...")
 		  popapellidoslector.AddRow("Seleccionar...")
-		  
+		  popcoljoin1.AddRow("Seleccionar...")
+		  popcoljoin2.AddRow("Seleccionar...")
 		  for i as integer = 1 to lboxParsed.ColumnCount -1
 		    'headers.add(lboxParsed.HeaderAt(i))
 		    popcoldividir.AddRow(lboxParsed.HeaderAt(i))
 		    popnombrelector.AddRow(lboxParsed.HeaderAt(i))
 		    popapellidoslector.AddRow(lboxParsed.HeaderAt(i))
+		    popcoljoin1.AddRow(lboxParsed.HeaderAt(i))
+		    popcoljoin2.AddRow(lboxParsed.HeaderAt(i))
 		  next
 		  popcoldividir.SelectedRowIndex=0
 		  popnombrelector.SelectedRowIndex=0
 		  popapellidoslector.SelectedRowIndex=0
+		  popcoljoin1.SelectedRowIndex=0
+		  popcoljoin2.SelectedRowIndex=0
 		  
 		  
 		  'popcoldividir.RemoveAllRows
@@ -1342,6 +1734,19 @@ End
 		  '
 		  'MessageBox(Join(headers,", "))
 		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function truncaString(nchar as integer, cadena as String) As String
+		  var numchar as Integer = cadena.Length
+		  
+		  if numchar>nchar then
+		    var truncado as String = cadena.Left(nchar-3)+"..."
+		    Return truncado
+		  else
+		    Return cadena
+		  end if
+		End Function
 	#tag EndMethod
 
 
@@ -1446,6 +1851,20 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
+#tag Events txtseparator
+	#tag Event
+		Sub MouseEnter()
+		  lbldivideinfo.TextColor=color.LightGray
+		  lbldivideinfo.Text= "por defecto (si no indica nada) se utiliza la coma como separador"
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub MouseExit()
+		  
+		  lbldivideinfo.Text= ""
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag Events btnSelAllNone1
 	#tag Event
 		Sub Action()
@@ -1474,7 +1893,7 @@ End
 		        lboxParsed.CellTextAt(i,totalrows-2)=locarr(0)
 		        lboxParsed.CellTextAt(i,totalrows-1)=locarr(1)
 		      Catch error as OutOfBoundsException
-		        
+		        info = info +1
 		      end try
 		    next
 		    if info>0 then
@@ -1482,6 +1901,60 @@ End
 		    end if
 		    txtnamenewcol1.Text=""
 		    txtnamenewcol2.Text=""
+		    
+		    getlstboxheaders()
+		    
+		  end if
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtseparator1
+	#tag Event
+		Sub MouseEnter()
+		  lbljoininfo.TextColor=color.LightGray
+		  lbljoininfo.Text= "por defecto (si no indica nada) se utiliza un espacio en blanco entre las cadenas de las columnas"
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub MouseExit()
+		  lbljoininfo.Text= ""
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events btnSelAllNone2
+	#tag Event
+		Sub Action()
+		  if popcoljoin1.SelectedRowIndex = 0 or popcoljoin2.SelectedRowIndex= 0 or txtnamenewcol3.Text="" then
+		    MessageBox("Por favor debe indicar Columnas a Unir y nombre para la columna resultante")
+		  Else
+		    
+		    lboxParsed.ColumnCount = lboxParsed.ColumnCount + 1
+		    lboxParsed.HeaderAt(lboxParsed.ColumnCount - 1) = txtnamenewcol3.Text.trim
+		    var indexcol1 as integer = popcoljoin1.SelectedRowIndex
+		    var indexcol2 as integer = popcoljoin2.SelectedRowIndex
+		    var totalrows as Integer = lboxParsed.ColumnCount
+		    var separator as String
+		    if txtseparator1.Text.trim="" then
+		      separator= " "
+		    else
+		      separator=txtseparator.Text.trim+ " "
+		    end if
+		    var info as integer = 0
+		    for i as integer = 0 to lboxParsed.RowCount-1
+		      try
+		        var content1 as string = lboxParsed.CellTextAt(i,indexcol1)
+		        var content2 as string = lboxParsed.CellTextAt(i,indexcol2)
+		        
+		        lboxParsed.CellTextAt(i,totalrows-1)=content1+separator+content2
+		      Catch error as OutOfBoundsException
+		        info = info +1
+		      end try
+		    next
+		    if info>0 then
+		      MessageBox("Parece que hay "+ info.ToString + " fila/s en las que se han detectado problemas al unirlas")
+		    end if
+		    
+		    txtnamenewcol3.Text=""
 		    
 		    getlstboxheaders()
 		    
