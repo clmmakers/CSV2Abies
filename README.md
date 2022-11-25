@@ -1,5 +1,5 @@
 # CSV2Abies is a small app that let you prepare csv to AbiesWeb xml document ready to import
-    Mac & Linux (not tested)
+    Mac ~~& Linux (not tested)~~
 
 Pending:
     Windows version, it needs iconv & file versions for Windows
@@ -8,7 +8,7 @@ Pending:
 
 ## Builds folder
 
-   ~~You´ll find 1 compilation for Linux x86_64~~ Actualmente hay un error embebiendo ContainerControls dentro de un Tabpanel.
+   ~~You´ll find 1 compilation for Linux x86_64~~ There's an error embebding ContainerControls within TabPanel
     
     and 3 for Mac (tested):
     Universal build (Intel & Apple Sillicon)
