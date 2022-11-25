@@ -1,5 +1,6 @@
 # CSV2Abies is a small app that let you prepare csv to AbiesWeb xml document ready to import
-    Mac ~~& Linux (not tested)~~
+for Mac
+~~& Linux (not tested)~~
 
 Pending:
     Windows version, it needs iconv & file versions for Windows
