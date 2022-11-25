@@ -7,16 +7,16 @@ Begin Window main
    Composite       =   False
    Frame           =   0
    FullScreen      =   False
-   FullScreenButton=   False
+   FullScreenButton=   True
    HasBackColor    =   False
    Height          =   720
    ImplicitInstance=   True
    LiveResize      =   "False"
    MacProcID       =   0
    MaxHeight       =   32000
-   MaximizeButton  =   False
+   MaximizeButton  =   True
    MaxWidth        =   32000
-   MenuBar         =   -1103311854
+   MenuBar         =   0
    MenuBarVisible  =   True
    MinHeight       =   600
    MinimizeButton  =   True
@@ -141,7 +141,7 @@ Begin Window main
          TabIndex        =   0
          TabPanelIndex   =   1
          TabStop         =   True
-         Text            =   "1. Cargar el archivo .csv\n2. La aplicación detectará la codificación del archivo. Si dicha codificación fuera diferente de UTF-8 tratará de convertirla (Mac y Linux). Si este proceso falla, se le informará. Inténtelo manualmente desde Excel o similar\n3. Se visualizarán los datos en el Listado. Puede seleccinar todas o aquellas entradas a discreción.\n4. Seleccione el tipo de datos que desea preparar y siga las instrucciones específicas"
+         Text            =   "1. Cargar el archivo .csv\n2. La aplicación detectará la codificación del archivo. Si dicha codificación fuera diferente de UTF-8 tratará de convertirla (Mac y Linux). Si este proceso falla, se le informará. Inténtelo manualmente desde Excel o similar\n3. Se visualizarán los datos en el Listado. Puede seleccinar todas o aquellas entradas a discreción (siempre estará disponible la Selección, asegúrese de hacerla antes de generar el xml con los registros adecuados)\n4. Seleccione el tipo de datos que desea preparar (Preparar Lectores, Preparar Cursos, Preparar Libros) y siga las instrucciones específicas de cada proceso (pestaña)"
          TextAlign       =   0
          TextColor       =   &c00000000
          TextFont        =   "System"
@@ -271,7 +271,7 @@ Begin Window main
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
-         Height          =   37
+         Height          =   27
          HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
@@ -294,7 +294,7 @@ Begin Window main
          TextFont        =   "SmallSystem"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   165
+         Top             =   180
          Transparent     =   False
          Underline       =   False
          Visible         =   True
@@ -327,12 +327,12 @@ Begin Window main
          Begin PushButton PushButton2
             AutoDeactivate  =   True
             Bold            =   True
-            ButtonStyle     =   6
+            ButtonStyle     =   4
             Cancel          =   False
             Caption         =   ">"
             Default         =   False
             Enabled         =   True
-            Height          =   233
+            Height          =   193
             HelpTag         =   ""
             Index           =   -2147483648
             InitialParent   =   "PagePanel1"
@@ -348,28 +348,28 @@ Begin Window main
             TabPanelIndex   =   1
             TabStop         =   True
             TextFont        =   "System"
-            TextSize        =   38.0
+            TextSize        =   20.0
             TextUnit        =   0
-            Top             =   38
+            Top             =   58
             Transparent     =   False
             Underline       =   False
             Visible         =   True
-            Width           =   33
+            Width           =   22
          End
          Begin PushButton PushButton3
             AutoDeactivate  =   True
             Bold            =   True
-            ButtonStyle     =   6
+            ButtonStyle     =   4
             Cancel          =   False
             Caption         =   "<"
             Default         =   False
             Enabled         =   True
-            Height          =   233
+            Height          =   193
             HelpTag         =   ""
             Index           =   -2147483648
             InitialParent   =   "PagePanel1"
             Italic          =   False
-            Left            =   38
+            Left            =   49
             LockBottom      =   False
             LockedInPosition=   False
             LockLeft        =   True
@@ -380,13 +380,13 @@ Begin Window main
             TabPanelIndex   =   2
             TabStop         =   True
             TextFont        =   "System"
-            TextSize        =   38.0
+            TextSize        =   20.0
             TextUnit        =   0
-            Top             =   38
+            Top             =   58
             Transparent     =   False
             Underline       =   False
             Visible         =   True
-            Width           =   33
+            Width           =   22
          End
          Begin PushButton PushButton1
             AutoDeactivate  =   True
@@ -444,7 +444,7 @@ Begin Window main
             TabPanelIndex   =   2
             TabStop         =   True
             Text            =   "Introduzca el tipo de lector a cargar en Abies (vea los tipos que tiene configurado en AbiesWeb de su centro). Respete capitalización; ej. (Alumno, alumno, Alumnado, Profesor...)"
-            TextAlign       =   0
+            TextAlign       =   2
             TextColor       =   &c00000000
             TextFont        =   "System"
             TextSize        =   0.0
@@ -453,7 +453,7 @@ Begin Window main
             Transparent     =   False
             Underline       =   False
             Visible         =   True
-            Width           =   676
+            Width           =   639
          End
          Begin TextField txtTipoLector
             AcceptTabs      =   False
@@ -698,7 +698,7 @@ Begin Window main
             Underline       =   False
             Value           =   1
             Visible         =   True
-            Width           =   889
+            Width           =   881
             Begin Label Label7
                AutoDeactivate  =   True
                Bold            =   False
@@ -745,7 +745,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   461
+               Left            =   453
                LockBottom      =   False
                LockedInPosition=   False
                LockLeft        =   False
@@ -780,7 +780,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   650
+               Left            =   642
                LockBottom      =   False
                LockedInPosition=   False
                LockLeft        =   False
@@ -815,7 +815,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   837
+               Left            =   829
                LockBottom      =   False
                LockedInPosition=   False
                LockLeft        =   False
@@ -867,7 +867,7 @@ Begin Window main
                Transparent     =   False
                Underline       =   False
                Visible         =   True
-               Width           =   362
+               Width           =   354
             End
             Begin TextField txtnamenewcol1
                AcceptTabs      =   False
@@ -887,7 +887,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   461
+               Left            =   453
                LimitText       =   0
                LockBottom      =   False
                LockedInPosition=   False
@@ -931,7 +931,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   650
+               Left            =   642
                LimitText       =   0
                LockBottom      =   False
                LockedInPosition=   False
@@ -958,29 +958,30 @@ Begin Window main
                Width           =   158
             End
             Begin DesktopTextField txtseparator
-               AcceptTabs      =   False
-               Alignment       =   0
-               AutoDeactivate  =   True
-               AutomaticallyCheckSpelling=   False
-               BackColor       =   &cFFFFFF00
+               AllowAutoDeactivate=   True
+               AllowFocusRing  =   True
+               AllowSpellChecking=   False
+               AllowTabs       =   False
+               BackgroundColor =   &cFFFFFF
                Bold            =   False
-               Border          =   True
-               CueText         =   ""
                Enabled         =   True
+               FontName        =   "System"
+               FontSize        =   0.0
+               FontUnit        =   0
                Format          =   ""
+               HasBorder       =   True
                Height          =   22
-               HelpTag         =   ""
+               Hint            =   ""
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   857
-               LimitText       =   0
+               Left            =   849
                LockBottom      =   False
                LockedInPosition=   False
                LockLeft        =   False
                LockRight       =   True
                LockTop         =   True
-               Mask            =   ""
+               MaximumCharactersAllowed=   0
                Password        =   False
                ReadOnly        =   False
                Scope           =   0
@@ -988,14 +989,13 @@ Begin Window main
                TabPanelIndex   =   1
                TabStop         =   True
                Text            =   ""
+               TextAlignment   =   0
                TextColor       =   &c00000000
-               TextFont        =   "System"
-               TextSize        =   0.0
-               TextUnit        =   0
+               Tooltip         =   ""
                Top             =   180
                Transparent     =   False
                Underline       =   False
-               UseFocusRing    =   True
+               ValidationMask  =   ""
                Visible         =   True
                Width           =   40
             End
@@ -1012,7 +1012,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   809
+               Left            =   801
                LockBottom      =   True
                LockedInPosition=   False
                LockLeft        =   False
@@ -1175,8 +1175,8 @@ Begin Window main
                Left            =   448
                LockBottom      =   False
                LockedInPosition=   False
-               LockLeft        =   False
-               LockRight       =   True
+               LockLeft        =   True
+               LockRight       =   False
                LockTop         =   True
                Multiline       =   False
                Scope           =   0
@@ -1184,7 +1184,7 @@ Begin Window main
                TabIndex        =   4
                TabPanelIndex   =   2
                TabStop         =   True
-               Text            =   "Nombre Columna Resultante"
+               Text            =   "Nombre Col. Resultante"
                TextAlign       =   0
                TextColor       =   &c00000000
                TextFont        =   "System"
@@ -1194,7 +1194,7 @@ Begin Window main
                Transparent     =   False
                Underline       =   False
                Visible         =   True
-               Width           =   191
+               Width           =   162
             End
             Begin Label Label14
                AutoDeactivate  =   True
@@ -1207,7 +1207,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   837
+               Left            =   829
                LockBottom      =   False
                LockedInPosition=   False
                LockLeft        =   False
@@ -1273,7 +1273,7 @@ Begin Window main
                Underline       =   False
                UseFocusRing    =   True
                Visible         =   True
-               Width           =   377
+               Width           =   369
             End
             Begin TextField txtseparator1
                AcceptTabs      =   False
@@ -1293,7 +1293,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   858
+               Left            =   850
                LimitText       =   0
                LockBottom      =   False
                LockedInPosition=   False
@@ -1332,7 +1332,7 @@ Begin Window main
                Index           =   -2147483648
                InitialParent   =   "TabPanel2"
                Italic          =   False
-               Left            =   809
+               Left            =   801
                LockBottom      =   True
                LockedInPosition=   False
                LockLeft        =   False
@@ -1384,7 +1384,7 @@ Begin Window main
                Transparent     =   False
                Underline       =   False
                Visible         =   True
-               Width           =   712
+               Width           =   704
             End
             Begin Label lbldivideinfo
                AutoDeactivate  =   True
@@ -1419,8 +1419,43 @@ Begin Window main
                Transparent     =   False
                Underline       =   False
                Visible         =   True
-               Width           =   730
+               Width           =   722
             End
+         End
+         Begin Label Label15
+            AutoDeactivate  =   True
+            Bold            =   True
+            DataField       =   ""
+            DataSource      =   ""
+            Enabled         =   True
+            Height          =   38
+            HelpTag         =   ""
+            Index           =   -2147483648
+            InitialParent   =   "PagePanel1"
+            Italic          =   False
+            Left            =   734
+            LockBottom      =   False
+            LockedInPosition=   False
+            LockLeft        =   True
+            LockRight       =   False
+            LockTop         =   True
+            Multiline       =   False
+            Scope           =   0
+            Selectable      =   False
+            TabIndex        =   8
+            TabPanelIndex   =   2
+            TabStop         =   True
+            Text            =   "->"
+            TextAlign       =   2
+            TextColor       =   &c00000000
+            TextFont        =   "System"
+            TextSize        =   32.0
+            TextUnit        =   0
+            Top             =   58
+            Transparent     =   False
+            Underline       =   False
+            Visible         =   True
+            Width           =   63
          End
       End
       Begin PushButton pbDBParsers
@@ -1510,7 +1545,7 @@ Begin Window main
       Bold            =   False
       ButtonStyle     =   0
       Cancel          =   False
-      Caption         =   "Sel All/None"
+      Caption         =   "Seleccionar todos/niguno"
       Default         =   False
       Enabled         =   True
       Height          =   20
@@ -1535,7 +1570,7 @@ Begin Window main
       Transparent     =   False
       Underline       =   False
       Visible         =   True
-      Width           =   91
+      Width           =   155
    End
 End
 #tag EndWindow
@@ -1937,7 +1972,7 @@ End
 		    if txtseparator1.Text.trim="" then
 		      separator= " "
 		    else
-		      separator=txtseparator.Text.trim+ " "
+		      separator=txtseparator1.Text.trim+ " "
 		    end if
 		    var info as integer = 0
 		    for i as integer = 0 to lboxParsed.RowCount-1
@@ -1977,6 +2012,9 @@ End
 		  estadoAllNone=0
 		  
 		  inputFile = GetOpenFolderItem(FileTypes.TextCSV)
+		  if inputFile=Nil then
+		    Exit
+		  end if
 		  
 		  select case convertEncodings(inputFile)
 		  case 0

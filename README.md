@@ -5,9 +5,10 @@ Pending:
     Windows version, it needs iconv & file versions for Windows
 
 
+
 ## Builds folder
 
-    You´ll find 1 compilation for Linux x86_64
+   ~~You´ll find 1 compilation for Linux x86_64~~ Actualmente hay un error embebiendo ContainerControls dentro de un Tabpanel.
     
     and 3 for Mac (tested):
     Universal build (Intel & Apple Sillicon)
