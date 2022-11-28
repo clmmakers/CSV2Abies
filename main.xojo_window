@@ -1699,15 +1699,16 @@ End
 		  next
 		  
 		  Var f As FolderItem
-		  f = FolderItem.ShowSaveFileDialog("", "ExportGenerico.xml")
+		  f = FolderItem.ShowSaveFileDialog("", "ficheroExportacionDatos.xml")
 		  If f <> Nil Then
 		    xml.SaveXml(f)
+		    var f2 as FolderItem = f.Parent
+		    var dir as String = f2.ShellPath
+		    var sh as new shell
+		    sh.Execute("zip ExportGenerico.zip "+ f.NativePath)
+		    //sh.Execute("ditto -ck "+ f.NativePath + " " + f2.NativePath + "/ExportGenerico.zip")
+		    MessageBox(" Se ha creado el archivo ""ExportGenerico.zip"" en el directorio que seleccionó previamente, este archivo zip es el que puede utilizar para importar los datos en Abies")
 		  End If
-		  var f2 as FolderItem = f.Parent
-		  var dir as String = f2.ShellPath
-		  var sh as new shell
-		  sh.Execute("ditto -ck "+ f.NativePath + " " + f2.NativePath + "/ExportGenerico.zip")
-		  MessageBox(" Se ha creado el archivo ""ExportGenerico.zip"" en el directorio que seleccionó previamente, este archivo zip es el que puede utilizar para importar los datos en Abies")
 		  sh.Close
 		End Sub
 	#tag EndMethod
