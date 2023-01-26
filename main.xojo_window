@@ -321,7 +321,7 @@ Begin Window main
          TabStop         =   False
          Top             =   38
          Transparent     =   False
-         Value           =   0
+         Value           =   1
          Visible         =   True
          Width           =   946
          Begin PushButton PushButton2
@@ -545,7 +545,7 @@ Begin Window main
             Index           =   -2147483648
             InitialParent   =   "PagePanel1"
             Italic          =   False
-            Left            =   152
+            Left            =   450
             LockBottom      =   False
             LockedInPosition=   False
             LockLeft        =   True
@@ -563,7 +563,7 @@ Begin Window main
             TextFont        =   "System"
             TextSize        =   0.0
             TextUnit        =   0
-            Top             =   159
+            Top             =   127
             Transparent     =   False
             Underline       =   False
             Visible         =   True
@@ -613,7 +613,7 @@ Begin Window main
             InitialParent   =   "PagePanel1"
             InitialValue    =   ""
             Italic          =   False
-            Left            =   285
+            Left            =   583
             ListIndex       =   0
             LockBottom      =   False
             LockedInPosition=   False
@@ -627,7 +627,7 @@ Begin Window main
             TextFont        =   "System"
             TextSize        =   0.0
             TextUnit        =   0
-            Top             =   161
+            Top             =   129
             Transparent     =   False
             Underline       =   False
             Visible         =   True
@@ -1436,8 +1436,8 @@ Begin Window main
             Left            =   734
             LockBottom      =   False
             LockedInPosition=   False
-            LockLeft        =   True
-            LockRight       =   False
+            LockLeft        =   False
+            LockRight       =   True
             LockTop         =   True
             Multiline       =   False
             Scope           =   0
@@ -1456,6 +1456,135 @@ Begin Window main
             Underline       =   False
             Visible         =   True
             Width           =   63
+         End
+         Begin CheckBox chkSexo
+            AutoDeactivate  =   True
+            Bold            =   False
+            Caption         =   "Incluir Sexo"
+            DataField       =   ""
+            DataSource      =   ""
+            Enabled         =   True
+            Height          =   20
+            HelpTag         =   ""
+            Index           =   -2147483648
+            InitialParent   =   "PagePanel1"
+            Italic          =   False
+            Left            =   504
+            LockBottom      =   False
+            LockedInPosition=   False
+            LockLeft        =   True
+            LockRight       =   False
+            LockTop         =   True
+            Scope           =   0
+            State           =   0
+            TabIndex        =   9
+            TabPanelIndex   =   2
+            TabStop         =   True
+            TextFont        =   "System"
+            TextSize        =   0.0
+            TextUnit        =   0
+            Top             =   175
+            Transparent     =   False
+            Underline       =   False
+            Visible         =   True
+            Width           =   105
+         End
+         Begin CheckBox chkAnnoNacimiento
+            AutoDeactivate  =   True
+            Bold            =   False
+            Caption         =   "Incluir Año Nacimiento"
+            DataField       =   ""
+            DataSource      =   ""
+            Enabled         =   True
+            Height          =   20
+            HelpTag         =   ""
+            Index           =   -2147483648
+            InitialParent   =   "PagePanel1"
+            Italic          =   False
+            Left            =   152
+            LockBottom      =   False
+            LockedInPosition=   False
+            LockLeft        =   True
+            LockRight       =   False
+            LockTop         =   True
+            Scope           =   0
+            State           =   0
+            TabIndex        =   10
+            TabPanelIndex   =   2
+            TabStop         =   True
+            TextFont        =   "System"
+            TextSize        =   0.0
+            TextUnit        =   0
+            Top             =   175
+            Transparent     =   False
+            Underline       =   False
+            Value           =   False
+            Visible         =   True
+            Width           =   171
+         End
+         Begin PopupMenu popAnnoNacimiento
+            AutoDeactivate  =   True
+            Bold            =   False
+            DataField       =   ""
+            DataSource      =   ""
+            Enabled         =   False
+            Height          =   20
+            HelpTag         =   ""
+            Index           =   -2147483648
+            InitialParent   =   "PagePanel1"
+            InitialValue    =   ""
+            Italic          =   False
+            Left            =   335
+            ListIndex       =   0
+            LockBottom      =   False
+            LockedInPosition=   False
+            LockLeft        =   True
+            LockRight       =   False
+            LockTop         =   True
+            Scope           =   0
+            TabIndex        =   11
+            TabPanelIndex   =   2
+            TabStop         =   True
+            TextFont        =   "System"
+            TextSize        =   0.0
+            TextUnit        =   0
+            Top             =   177
+            Transparent     =   False
+            Underline       =   False
+            Visible         =   True
+            Width           =   134
+         End
+         Begin PopupMenu popSexo
+            AutoDeactivate  =   True
+            Bold            =   False
+            DataField       =   ""
+            DataSource      =   ""
+            Enabled         =   False
+            Height          =   20
+            HelpTag         =   ""
+            Index           =   -2147483648
+            InitialParent   =   "PagePanel1"
+            InitialValue    =   ""
+            Italic          =   False
+            Left            =   621
+            ListIndex       =   0
+            LockBottom      =   False
+            LockedInPosition=   False
+            LockLeft        =   True
+            LockRight       =   False
+            LockTop         =   True
+            Scope           =   0
+            TabIndex        =   12
+            TabPanelIndex   =   2
+            TabStop         =   True
+            TextFont        =   "System"
+            TextSize        =   0.0
+            TextUnit        =   0
+            Top             =   177
+            Transparent     =   False
+            Underline       =   False
+            Visible         =   True
+            Width           =   134
          End
       End
       Begin PushButton pbDBParsers
@@ -1651,7 +1780,7 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h21
-		Private Sub formXml(vtp as String, ncolapel as integer, ncolnombre as integer)
+		Private Sub formXml(vtp as String, ncolapel as integer, ncolnombre as integer, ncolnacimiento as integer = 0, ncolsexo as integer = 0)
 		  'vtp = "Alumno"
 		  var date as new date
 		  var year as Integer=date.Year
@@ -1694,6 +1823,12 @@ End
 		      Lector.SetAttribute("Apellidos", truncaString(30,lboxParsed.CellTextAt(i,ncolapel ).Trim))
 		      Lector.SetAttribute("Nombre", truncaString(30,lboxParsed.CellTextAt(i,ncolnombre).Trim))
 		      Lector.SetAttribute("IdTipoLector", idtpl.ToString)
+		      if chkAnnoNacimiento.Value then
+		        Lector.SetAttribute("Nacido",lboxParsed.CellTextAt(i,ncolnacimiento).trim)
+		      end if
+		      if chkSexo.value then
+		        Lector.SetAttribute("Sexo",lboxParsed.CellTextAt(i,ncolsexo).Trim)
+		      end if
 		    end if
 		    
 		  next
@@ -1705,11 +1840,12 @@ End
 		    var f2 as FolderItem = f.Parent
 		    var dir as String = f2.ShellPath
 		    var sh as new shell
-		    sh.Execute("zip ExportGenerico.zip "+ f.NativePath)
-		    //sh.Execute("ditto -ck "+ f.NativePath + " " + f2.NativePath + "/ExportGenerico.zip")
+		    //sh.Execute("zip ExportGenerico.zip "+ f.NativePath)
+		    sh.Execute("ditto -ck "+ f.ShellPath + " " + f2.ShellPath + "/ExportGenerico.zip")
 		    MessageBox(" Se ha creado el archivo ""ExportGenerico.zip"" en el directorio que seleccionó previamente, este archivo zip es el que puede utilizar para importar los datos en Abies")
+		    sh.Close
 		  End If
-		  sh.Close
+		  
 		End Sub
 	#tag EndMethod
 
@@ -1745,11 +1881,15 @@ End
 		  popapellidoslector.RemoveAllRows
 		  popcoljoin1.RemoveAllRows
 		  popcoljoin2.RemoveAllRows
+		  popAnnoNacimiento.RemoveAllRows
+		  popSexo.RemoveAllRows
 		  popcoldividir.AddRow("Seleccionar...")
 		  popnombrelector.AddRow("Seleccionar...")
 		  popapellidoslector.AddRow("Seleccionar...")
 		  popcoljoin1.AddRow("Seleccionar...")
 		  popcoljoin2.AddRow("Seleccionar...")
+		  popAnnoNacimiento.AddRow("Seleccionar...")
+		  popSexo.AddRow("Seleccionar")
 		  for i as integer = 1 to lboxParsed.ColumnCount -1
 		    'headers.add(lboxParsed.HeaderAt(i))
 		    popcoldividir.AddRow(lboxParsed.HeaderAt(i))
@@ -1757,12 +1897,16 @@ End
 		    popapellidoslector.AddRow(lboxParsed.HeaderAt(i))
 		    popcoljoin1.AddRow(lboxParsed.HeaderAt(i))
 		    popcoljoin2.AddRow(lboxParsed.HeaderAt(i))
+		    popAnnoNacimiento.AddRow(lboxParsed.HeaderAt(i))
+		    popSexo.AddRow(lboxParsed.HeaderAt(i))
 		  next
 		  popcoldividir.SelectedRowIndex=0
 		  popnombrelector.SelectedRowIndex=0
 		  popapellidoslector.SelectedRowIndex=0
 		  popcoljoin1.SelectedRowIndex=0
 		  popcoljoin2.SelectedRowIndex=0
+		  popAnnoNacimiento.SelectedRowIndex=0
+		  popSexo.SelectedRowIndex=0
 		  
 		  
 		  'popcoldividir.RemoveAllRows
@@ -1792,6 +1936,10 @@ End
 
 	#tag Property, Flags = &h0
 		estadoAllNone As Integer = 0
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		numselected As Integer = 0
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -1881,8 +2029,12 @@ End
 		Sub Action()
 		  if popnombrelector.SelectedRowIndex=0 or popapellidoslector.SelectedRowIndex=0 or txtTipoLector.Text="" then
 		    MessageBox("Indique qué columnas corresponden a los campos pedidos")
-		  else
-		    formXml(txtTipoLector.Text.trim, popapellidoslector.SelectedRowIndex, popnombrelector.SelectedRowIndex)
+		  else 
+		    if numselected=0 and estadoAllNone=0 then
+		      MessageBox("No tiene ninguna fila seleccionada del Listado")
+		    else
+		      formXml(txtTipoLector.Text.trim, popapellidoslector.SelectedRowIndex, popnombrelector.SelectedRowIndex, popAnnoNacimiento.SelectedRowIndex,popSexo.SelectedRowIndex)
+		    end if
 		  end if
 		End Sub
 	#tag EndEvent
@@ -1993,6 +2145,29 @@ End
 		    txtnamenewcol3.Text=""
 		    
 		    getlstboxheaders()
+		    
+		  end if
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events chkSexo
+	#tag Event
+		Sub Action()
+		  if me.Value then
+		    popSexo.Enabled=true
+		  else
+		    popSexo.Enabled=false
+		  end if
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events chkAnnoNacimiento
+	#tag Event
+		Sub Action()
+		  if me.Value then
+		    popAnnoNacimiento.Enabled=true
+		  else
+		    popAnnoNacimiento.Enabled=false
 		    
 		  end if
 		End Sub
@@ -2133,6 +2308,20 @@ End
 		  
 		  
 		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events lboxParsed
+	#tag Event
+		Function CellPressed(row As Integer, column As Integer, x As Integer, y As Integer) As Boolean
+		  if column=0 then
+		    if me.CellCheckBoxValueAt(row,0)= true then
+		      numselected=numselected-1
+		    else
+		      numselected=numselected+1
+		      
+		    end if
+		  end if
+		End Function
 	#tag EndEvent
 #tag EndEvents
 #tag Events btnSelAllNone
@@ -2415,5 +2604,13 @@ End
 		InitialValue=""
 		Type="string"
 		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="numselected"
+		Visible=false
+		Group="Behavior"
+		InitialValue="0"
+		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 #tag EndViewBehavior
