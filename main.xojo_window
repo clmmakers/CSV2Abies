@@ -1486,6 +1486,7 @@ Begin Window main
             Top             =   175
             Transparent     =   False
             Underline       =   False
+            Value           =   False
             Visible         =   True
             Width           =   105
          End
@@ -1861,11 +1862,11 @@ End
 		  
 		  select case x
 		  case 1
-		    idunlect=idunlect +"000"+numberrow.ToString
+		    idunlect=idunlect +"0000"+numberrow.ToString
 		  case 2
-		    idunlect=idunlect +"00"+numberrow.ToString
+		    idunlect=idunlect +"000"+numberrow.ToString
 		  case 3
-		    idunlect=idunlect +"0"+numberrow.ToString
+		    idunlect=idunlect +"00"+numberrow.ToString
 		  Else
 		    idunlect=idunlect +numberrow.ToString
 		  end select
